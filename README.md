@@ -1,2 +1,2 @@
 # LBR-Boss-Killer
-Boss Killing Authotkey Script for the game Leaf Blower Revolution
+Boss Killing AutoHotkey Script for the game Leaf Blower Revolution
