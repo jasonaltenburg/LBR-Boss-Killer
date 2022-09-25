@@ -22,11 +22,17 @@ Global LBArea := {FirstFavorite: "1296,282"
 Global LBCoords := {PetMenu:"400, 90"
 , PTeam1:"360,450"
 , PTeam2: "360,515"
-, TranscendButton: "1288,796"
-, SalvageButton: "1460,700"
 , LeafCounter: "1120, 420"
 , LeafBet: "710, 360"
-, LeafCount: "375, 360"}
+, LeafCount: "375, 360"
+, CardC: "700, 905"
+, CardU: "850, 905"
+, CardR: "1040, 905"
+, CardE: "1210, 905"
+, CardM: "1390, 905"
+, CardL: "1560, 905"
+, CardTr: "1260, 730"
+, CardSa: "1460, 640"}
 
 Global ChestType := {Epic: "1296, 530", Legendary: "1296, 630"}
 
@@ -46,11 +52,11 @@ UseChest(Typeofchestused)
 ;Transcend and Salvage
 !q::
 mousegetpos, mx, my
-LBClick("TranscendButton")
-LBClick("TranscendButton")
+LBClick("CardTr")
+LBClick("CardTr")
 send {alt down}
-LBClick("SalvageButton")
-LBClick("SalvageButton")
+LBClick("CardSa")
+LBClick("CardSa")
 send {alt up}
 mx := mx+60
 sleep 50
@@ -65,8 +71,8 @@ return
 ;Transcend only
 !e::
 mousegetpos, mx, my
-LBClick("TranscendButton")
-LBClick("TranscendButton")
+LBClick("CardTr")
+LBClick("CardTr")
 mousemove %mx%, %my%
 sleep 50
 return
@@ -76,8 +82,8 @@ return
 mousegetpos, mx, my
 sleep 50
 send {alt down}
-LBClick("SalvageButton")
-LBClick("SalvageButton")
+LBClick("CardSa")
+LBClick("CardSa")
 send {alt up}
 sleep 50
 mousemove %mx%, %my%
